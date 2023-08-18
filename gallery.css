@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    min-height: 1600px;
+    background-color: #000;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1400px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 80%, #000 100%);
+    z-index: 100000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#last{
+    z-index: 10;
+}
+#text{
+    position: relative;
+    color: white;
+    z-index: 2;
+    font-size: 12em;
+    text-align: center;
+    padding-top: 205px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.ab-text{
+    padding: 100px 20%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.7rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+.box{
+    height: 340px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: gray;
+    transition: all 0.8s;
+    cursor: pointer;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/01.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box1:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box2{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(./img/05.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box2:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box3{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/03.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box3:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box4{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/06.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box4:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box5{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/02.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box5:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box6{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/04.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box6:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box7{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/07.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box7:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box8{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/08.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box8:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box9{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/09.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box9:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box10{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/10.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box10:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box11{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/11.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box11:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box12{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/12.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box12:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box13{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td1.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box13:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box14{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/pt1.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box14:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box15{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td3.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box15:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box16{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/pt5.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box16:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box17{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td5.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box17:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box18{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box18:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box19{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/wd1.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box19:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box20{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/ld5.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box20:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box21{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/pt2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box21:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box22{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/pt4.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box22:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box23{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td7.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box23:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box24{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/wd2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box24:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box25{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td8.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box25:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box26{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/ld1.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box26:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box27{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td9.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box27:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box28{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/ld2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box28:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box29{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/wd3.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box29:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box30{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/ld3.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box30:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box31{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/wd4.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box31:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box32{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td11.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box32:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box33{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/ld4.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box33:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box34{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/wd6.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box34:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box35{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/ld7.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box35:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box36{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/wd9.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box36:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box37{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/ld6.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box37:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box38{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/wd5.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box38:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box39{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td4.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box39:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box40{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/ld8.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box40:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box41{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(./img/wd8.webp) center center no-repeat;
+    background-size: cover;
+}
+.box41:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box42{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/td12.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box42:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box43{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/wd10.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box43:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box44{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/ld9.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box44:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box45{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(../img/wd11.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box45:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box46{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(./img/ld10.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box46:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box47{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(./img/wd12.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box47:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box48{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 75%, #000 100%), url(./img/ld11.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.box48:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+
+
+@media (max-width:735px) {
+    #text{
+        font-size: 90px;
+    }
+}
